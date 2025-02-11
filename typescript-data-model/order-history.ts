@@ -4,10 +4,6 @@ interface Order {
   creator?: string;
   returnByDate: string;
   price: number;
-  title2?: string;
-  creator2?: string;
-  returnByDate2?: string;
-  price2?: number;
 }
 const orderHistory: Order[] = [
   {
