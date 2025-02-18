@@ -5,5 +5,6 @@ interface Person {
 }
 
 function getInitialsOfPerson(person: Person): string {
-  return `${person.firstName[0]}${person.lastName[0]}`;
+  const initials: string = `${person.firstName[0]}${person.lastName[0]}`;
+  return initials.toUpperCase();
 }
