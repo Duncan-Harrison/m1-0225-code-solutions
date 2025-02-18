@@ -31,7 +31,7 @@ function repeatWord(word, times) {
   let count = 1;
   let repeated = '';
   while (count <= times) {
-    repeated = repeated += word + ' ';
+    repeated += word + ' ';
     count++;
   }
   return repeated;
@@ -52,7 +52,7 @@ function doubleAll(numbers) {
 function sumArray(numbers) {
   let sum = 0;
   for (const i of numbers) {
-    sum = sum += i;
+    sum += i;
   }
   return sum;
 }
@@ -73,7 +73,7 @@ function getKeys(obj) {
 function getValues(obj) {
   const values = [];
   for (const key in obj) {
-    values.push(`${obj[key]}`);
+    values.push(obj[key]);
   }
   return values;
 }
