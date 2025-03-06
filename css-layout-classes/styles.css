@@ -1,0 +1,35 @@
+.container {
+  max-width: 800px;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  padding-right: 10px;
+  justify-content: space-around;
+}
+
+.column-full {
+  flex-basis: 100%;
+  justify-content: flex-start;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+  justify-content: flex-start;
+  padding: auto;
+  margin-right: auto;
+}
+
+.column-one-fourth {
+  flex-basis: calc(100% / 4);
+  justify-content: flex-start;
+}
+
+.column-three-fourths {
+  flex-basis: calc((100% / 4) * 3);
+}
+
+img {
+  width: 100%;
+}
