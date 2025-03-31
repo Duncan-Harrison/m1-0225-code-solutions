@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.screen,
+.screen.on,
+.screen.off {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100rem;
+  height: 100rem;
+}
+
+.bulb,
+.bulb.on,
+.bulb.off {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.screen.on {
+  background-color: palegoldenrod;
+}
+
+.screen.off {
+  background-color: black;
+}
+
+.bulb.on {
+  background-color: goldenrod;
+  box-shadow: 0 0 15px gold;
+}
+
+.bulb.off {
+  background-color: darkslategray;
+}
