@@ -10,9 +10,9 @@ $todoForm.addEventListener('submit', (event) => {
     isCompleted: false,
   };
   todos.push(todo);
+  writeTodos();
   $todoList.appendChild(renderTodo(todo));
   $todoForm.reset();
-  writeTodos();
 });
 const $todoList = document.querySelector('#todo-list');
 $todoList.addEventListener('change', (event) => {
@@ -21,10 +21,10 @@ $todoList.addEventListener('change', (event) => {
   for (let i = 0; i < todos.length; i++) {
     if (todos[i].todoId === todoId) {
       todos[i].isCompleted = $eventTarget.checked;
+      writeTodos();
       break;
     }
   }
-  writeTodos();
 });
 for (let i = 0; i < todos.length; i++) {
   const $todo = renderTodo(todos[i]);
