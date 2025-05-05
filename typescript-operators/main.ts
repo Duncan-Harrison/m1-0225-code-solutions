@@ -27,10 +27,8 @@ const announce1 = 'v1 is truthy';
 console.log('v1: ', v1 && announce1);
 console.log('v2: ', v2 && 'v2 is truthy');
 
-let config1 = '';
-let config2 = '';
-v1 || (config1 = 'default-value');
-v2 || (config2 = 'default-value');
+const config1 = v1 || 'default-value';
+const config2 = v2 || 'default-value';
 console.log('config1: ', config1, ', config2:', config2);
 
 let cfg1 = '';
@@ -50,10 +48,8 @@ v2 ?? (cfg2 = 'default-value');
 v3 ?? (cfg3 = 'default-value');
 console.log('cfg1: ', cfg1, ', cfg2: ', cfg2, ', cfg3: ', cfg3);
 
-let tern1 = false;
-let tern2 = false;
-v1 ? (tern1 = true) : (tern1 = false);
-v2 ? (tern2 = true) : (tern2 = false);
+const tern1 = v1 ? 'truthy' : 'falsy';
+const tern2 = v2 ? 'truthy' : 'falsy';
 console.log('tern1: ', tern1, ', tern2: ', tern2);
 
 const oc1 = v1?.value;
