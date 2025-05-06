@@ -15,7 +15,7 @@ const names = [
 const evens = numbers.filter((el) => el % 2 === 0);
 console.log('Even numbers ', evens);
 
-function dFree(word: string): any {
+/* function dFree(word: string): any {
   const wordArray: string[] = word.split('');
   let checked: string = '';
   for (let j = 0; j < wordArray.length; j++) {
@@ -26,6 +26,6 @@ function dFree(word: string): any {
     }
   }
   return checked;
-}
-const noD = names.filter((el) => dFree(el));
+} */
+const noD = names.filter((el) => !el.includes('d') && !el.includes('D'));
 console.log('No D ', noD);
