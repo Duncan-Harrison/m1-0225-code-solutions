@@ -30,9 +30,9 @@ async function throwChained(): Promise<void> {
 }
 
 try {
-  throwOnce();
-  throwSeveral();
-  throwChained();
+  await throwOnce();
+  await throwSeveral();
+  await throwChained();
 } catch (error) {
   console.log(elapsed(), 'throw Error:', error);
 }
