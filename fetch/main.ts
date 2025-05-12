@@ -32,7 +32,7 @@ async function pocketMonster(): Promise<void> {
     if (!response.ok) {
       throw new Error(`HTTP error status: ${response.status}`);
     }
-    const data = (await response.json()) as Pokemon[];
+    const data = (await response.json()) as Pokemon;
     console.log(data);
   } catch (error) {
     console.error('Error: ', error);
